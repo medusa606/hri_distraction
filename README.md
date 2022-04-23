@@ -6,9 +6,19 @@ This is a repository for the data collected in a large HRI study undertaken at t
 
 ## The Study
 
+![](HRI.gif)
+
+This is a Matlab plot showing an example of the data gathered from the study. In the study we focused on how people may become distracted while interacting with a robot and what this may lead to in terms of safety. The top left is a video of the scene showing a participant receiving dressing assistance from a Baxter robot. The participant is also undertaking a cognitive test (on the TV screen) and the result are shown in the upper right figure.
+
+A skeletal tracker was used to capture the pose of the participant and the gaze azumith direction is shown as a red dotted line on the floor. Additional data plots show the left and right end effector height of the robot and the force observed in all three axes. The figure at the bottom tracks a number of other features of the scenario, such as where the participant is looking, which can be used to look at correlations between distraction and the recorded events.
+
 ### Participants
 
+The dataset is comprised of recordings from 42 participants each with around 40 minutes of data. The participants were volunteers from The UWE Frenchay campus, consent forms were signed prior to participation. There were 14 males and 28 females.
+
 ### Control & Experiment Tests
+
+Data was captured from several different input sources including video observations, data captured from the ROS message environment including robot pose, video cameras, a gaze tracking device, the participant skeletal tracking suite and force gauges from the robot. Post analysis of the video footage from the gaze tracking glasses was codified with the visual fixation of the participant. 
 
 ## The Equipment
 
@@ -60,10 +70,4 @@ This can be easily verified by observing the first shape on the cognitive load t
 
 ## Results
 
-This is a Matlab plot showing data gathered from a human-robot interaction (HRI) trial focusing on how people may become distracted while interacting with a robot and what safety related consequences this may lead to. The top left is a video of the scene showing a participant receiving dressing assistance from a Baxter robot. The participant is also undertaking a cognitive test (on the TV screen) and the result are shown in the upper right figure.
 
-![](HRI.gif)
-
-A skeletal tracker was used to capture the pose of the participant and the gaze azumith direction is shown as a red dotted line on the floor. Additional data plots show the left and right end effector height of the robot and the force observed in all three axes. The figure at the bottom tracks a number of other features of the scenario, such as where the participant is looking, which can be used to look at correlations between distraction and the recorded events.
-
-To compile this large dataset of 42 participants each with around 40 minutes of recording required joining and regularising several different sources of data recordings including researcher coded data based on video observations, data captured from the ROS message environment, video cameras, a gaze tracking device, the participant skeletal tracking suite and force gauges from the robot.
